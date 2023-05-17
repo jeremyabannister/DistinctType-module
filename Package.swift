@@ -22,7 +22,25 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/JSONToolkit",
+            "0.1.2" ..< "0.2.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/RandomlyGeneratable-module",
+            "0.1.0" ..< "0.2.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/Testable-module",
+            "0.1.0" ..< "0.2.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/XCTestToolkit",
             "0.1.0" ..< "0.2.0"
         ),
     ],
@@ -36,7 +54,12 @@ let package = Package(
         ),
         .testTarget(
             name: "DistinctType-tests",
-            dependencies: ["DistinctType-module"]
+            dependencies: [
+                "DistinctType-module",
+                "JSONToolkit",
+                "Testable-module",
+                "XCTestToolkit",
+            ]
         ),
     ]
 )
