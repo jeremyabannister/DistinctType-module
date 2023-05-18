@@ -12,49 +12,40 @@
 
 ///
 public struct DistinctType
-    <Value, TypeDistinguisher>:
+    <UnderlyingType, Distinguisher>:
         ExpressionErgonomic {
     
     ///
-    public var value: Value
-    public init (value: Value) { self.value = value }
+    public var underlyingValue: UnderlyingType
+    public init (underlyingValue: UnderlyingType) { self.underlyingValue = underlyingValue }
+    public init (_ underlyingValue: UnderlyingType) { self.underlyingValue = underlyingValue }
 }
 
 ///
-extension DistinctType: RandomlyGeneratable
-    where Value: RandomlyGeneratable {
-    
-    ///
-    public static func generateRandom () -> Self {
-        .init(value: .generateRandom())
-    }
-}
+extension DistinctType: Hashable where UnderlyingType: Hashable { }
+extension DistinctType: Equatable where UnderlyingType: Equatable { }
 
 ///
 extension DistinctType: CustomStringConvertible
-    where Value: CustomStringConvertible {
+    where UnderlyingType: CustomStringConvertible {
     
     ///
     public var description: String {
-        value.description
+        underlyingValue.description
     }
 }
 
 ///
 extension DistinctType: Codable
-    where Value: Codable {
+    where UnderlyingType: Codable {
     
     ///
     public init (from decoder: Decoder) throws {
-        try self.init(value: .init(from: decoder))
+        try self.init(underlyingValue: .init(from: decoder))
     }
     
     ///
     public func encode (to encoder: Encoder) throws {
-        try value.encode(to: encoder)
+        try underlyingValue.encode(to: encoder)
     }
 }
-
-///
-extension DistinctType: Hashable where Value: Hashable { }
-extension DistinctType: Equatable where Value: Equatable { }

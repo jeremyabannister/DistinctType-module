@@ -28,7 +28,7 @@ final class distinct_type_tests: XCTestCase {
         let uuid = UUID()
         
         ///
-        let subject = Subject(value: uuid)
+        let subject = Subject(underlyingValue: uuid)
         
         ///
         let jsonData = try subject.asJSONData()
