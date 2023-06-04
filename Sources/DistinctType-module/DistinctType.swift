@@ -22,9 +22,6 @@ public struct DistinctType
 }
 
 ///
-extension DistinctType: Hashable where UnderlyingType: Hashable { }
-
-///
 extension DistinctType: CustomStringConvertible
     where UnderlyingType: CustomStringConvertible {
     
