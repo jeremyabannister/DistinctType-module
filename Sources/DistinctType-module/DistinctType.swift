@@ -6,11 +6,6 @@
 //
 
 ///
-@_exported import ExpressionErgonomics
-@_exported import RandomlyGeneratable_module
-
-
-///
 public struct DistinctType
     <UnderlyingType, Distinguisher>:
         ExpressionErgonomic {
