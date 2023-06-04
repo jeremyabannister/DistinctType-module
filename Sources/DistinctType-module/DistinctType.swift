@@ -22,16 +22,6 @@ public struct DistinctType
 }
 
 ///
-extension DistinctType: CustomStringConvertible
-    where UnderlyingType: CustomStringConvertible {
-    
-    ///
-    public var description: String {
-        underlyingValue.description
-    }
-}
-
-///
 extension DistinctType: Codable
     where UnderlyingType: Codable {
     
