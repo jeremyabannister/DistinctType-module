@@ -20,18 +20,3 @@ public struct DistinctType
     public init (underlyingValue: UnderlyingType) { self.underlyingValue = underlyingValue }
     public init (_ underlyingValue: UnderlyingType) { self.underlyingValue = underlyingValue }
 }
-
-///
-extension DistinctType: Codable
-    where UnderlyingType: Codable {
-    
-    ///
-    public init (from decoder: Decoder) throws {
-        try self.init(underlyingValue: .init(from: decoder))
-    }
-    
-    ///
-    public func encode (to encoder: Encoder) throws {
-        try underlyingValue.encode(to: encoder)
-    }
-}
