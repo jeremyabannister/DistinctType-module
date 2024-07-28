@@ -1,0 +1,86 @@
+{
+  "pins" : [
+    {
+      "identity" : "data-humanreadabledescription",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Data-humanReadableDescription",
+      "state" : {
+        "revision" : "38a7f852da2ad780626fcc30af528b0ae790d4a8",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "data-utf8string",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Data-utf8String",
+      "state" : {
+        "revision" : "0c9ce9755054c84aea37bbb385f0859df837aca1",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "errormessage-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage-module",
+      "state" : {
+        "revision" : "4eea71d7b3dc1a24fb0a69871009265819ec7ec5",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "expressionergonomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/ExpressionErgonomics",
+      "state" : {
+        "revision" : "f1004f67ac975e36f7400bb13a945bae1fb5c9ec",
+        "version" : "0.3.2"
+      }
+    },
+    {
+      "identity" : "jsontoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/JSONToolkit",
+      "state" : {
+        "revision" : "bfd2ae144794b57b41559c49c1c1ee071b44b6af",
+        "version" : "0.1.2"
+      }
+    },
+    {
+      "identity" : "randomlygeneratable-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/RandomlyGeneratable-module",
+      "state" : {
+        "revision" : "d9c78f022678459888cee34d0cb5a6534a2b4071",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "string-utf8data",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/String-utf8Data",
+      "state" : {
+        "revision" : "af34c29e3abefb0b8f48ba4d29b6942609da9a2a",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "testable-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Testable-module",
+      "state" : {
+        "revision" : "b0642c654d854c391c4c88ca112a8b3433028fa9",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "xctesttoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/XCTestToolkit",
+      "state" : {
+        "revision" : "ad6a4de96c7ff31435afb1945f719a30edc867ad",
+        "version" : "0.1.5"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -10,7 +10,9 @@ extension DistinctType: Hashable
     where UnderlyingType: Hashable {
     
     ///
-    public func hash (into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
+        
+        ///
         hasher.combine(underlyingValue)
     }
 }

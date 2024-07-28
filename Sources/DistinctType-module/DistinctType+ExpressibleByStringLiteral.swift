@@ -13,7 +13,11 @@ extension DistinctType: ExpressibleByStringLiteral
     public typealias StringLiteralType = UnderlyingType.StringLiteralType
     
     ///
-    public init (stringLiteral value: StringLiteralType) {
-        self.init(.init(stringLiteral: value))
+    public init(stringLiteral value: StringLiteralType) {
+        
+        ///
+        self.init(
+            .init(stringLiteral: value)
+        )
     }
 }

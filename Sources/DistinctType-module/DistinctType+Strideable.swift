@@ -13,12 +13,23 @@ extension DistinctType: Strideable
     public typealias Stride = UnderlyingType.Stride
     
     ///
-    public func distance (to other: Self) -> Stride {
-        self.underlyingValue.distance(to: other.underlyingValue)
+    public func distance(to other: Self) -> Stride {
+        
+        ///
+        self.underlyingValue
+            .distance(
+                to: other.underlyingValue
+            )
     }
     
     ///
-    public func advanced (by n: Self.Stride) -> Self {
-        .init(self.underlyingValue.advanced(by: n))
+    public func advanced(by n: Self.Stride) -> Self {
+        
+        ///
+        .init(
+            self
+                .underlyingValue
+                .advanced(by: n)
+        )
     }
 }

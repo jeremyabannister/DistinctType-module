@@ -13,7 +13,11 @@ extension DistinctType: ExpressibleByUnicodeScalarLiteral
     public typealias UnicodeScalarLiteralType = UnderlyingType.UnicodeScalarLiteralType
     
     ///
-    public init (unicodeScalarLiteral value: UnicodeScalarLiteralType) {
-        self.init(.init(unicodeScalarLiteral: value))
+    public init(unicodeScalarLiteral value: UnicodeScalarLiteralType) {
+        
+        ///
+        self.init(
+            .init(unicodeScalarLiteral: value)
+        )
     }
 }

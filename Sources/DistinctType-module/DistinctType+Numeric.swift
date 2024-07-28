@@ -10,7 +10,7 @@ extension DistinctType: Numeric
     where UnderlyingType: Numeric {
     
     ///
-    public init? <T: BinaryInteger> (exactly source: T) {
+    public init?(exactly source: some BinaryInteger) {
         
         ///
         guard let underlyingValue = UnderlyingType(exactly: source) else { return nil }

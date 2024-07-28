@@ -10,7 +10,11 @@ extension DistinctType: ExpressibleByNilLiteral
     where UnderlyingType: ExpressibleByNilLiteral {
     
     ///
-    public init (nilLiteral: ()) {
-        self.init(.init(nilLiteral: ()))
+    public init(nilLiteral: ()) {
+        
+        ///
+        self.init(
+            .init(nilLiteral: ())
+        )
     }
 }

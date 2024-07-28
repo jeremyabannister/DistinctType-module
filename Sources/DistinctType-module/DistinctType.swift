@@ -6,12 +6,28 @@
 //
 
 ///
-public struct DistinctType
-    <UnderlyingType, Distinguisher>:
-        ExpressionErgonomic {
+public struct DistinctType<
+    UnderlyingType,
+    Distinguisher
+>:
+    ExpressionErgonomic {
     
     ///
     public var underlyingValue: UnderlyingType
-    public init (underlyingValue: UnderlyingType) { self.underlyingValue = underlyingValue }
-    public init (_ underlyingValue: UnderlyingType) { self.underlyingValue = underlyingValue }
+    
+    ///
+    public init(
+        underlyingValue: UnderlyingType
+    ) {
+        self.underlyingValue = underlyingValue
+    }
+    
+    ///
+    public init(
+        _ underlyingValue: UnderlyingType
+    ) {
+        
+        ///
+        self.underlyingValue = underlyingValue
+    }
 }

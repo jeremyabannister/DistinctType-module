@@ -10,7 +10,11 @@ extension DistinctType: RandomlyGeneratable
     where UnderlyingType: RandomlyGeneratable {
     
     ///
-    public static func generateRandom () -> Self {
-        .init(underlyingValue: .generateRandom())
+    public static func generateRandom() -> Self {
+        
+        ///
+        .init(
+            underlyingValue: .generateRandom()
+        )
     }
 }

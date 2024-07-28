@@ -15,7 +15,7 @@ extension DistinctType: BinaryInteger
     }
     
     ///
-    public init? <T: BinaryFloatingPoint> (exactly source: T) {
+    public init?(exactly source: some BinaryFloatingPoint) {
         
         ///
         guard let underlyingValue = UnderlyingType(exactly: source) else { return nil }
@@ -25,22 +25,24 @@ extension DistinctType: BinaryInteger
     }
     
     ///
-    public init <T: BinaryFloatingPoint> (_ source: T) {
+    public init(_ source: some BinaryFloatingPoint) {
+        
+        ///
         self.init(.init(source))
     }
     
     ///
-    public init <T: BinaryInteger> (_ source: T) {
+    public init(_ source: some BinaryInteger) {
         self.init(.init(source))
     }
     
     ///
-    public init <T: BinaryInteger> (truncatingIfNeeded source: T) {
+    public init(truncatingIfNeeded source: some BinaryInteger) {
         self.init(.init(truncatingIfNeeded: source))
     }
     
     ///
-    public init <T: BinaryInteger> (clamping source: T) {
+    public init(clamping source: some BinaryInteger) {
         self.init(.init(clamping: source))
     }
     
@@ -138,9 +140,9 @@ extension DistinctType: BinaryInteger
     }
     
     ///
-    public func quotientAndRemainder
-        (dividingBy rhs: Self)
-    -> (quotient: Self, remainder: Self) {
+    public func quotientAndRemainder(
+        dividingBy rhs: Self
+    ) -> (quotient: Self, remainder: Self) {
         
         ///
         let (quotient, remainder) =
@@ -155,12 +157,19 @@ extension DistinctType: BinaryInteger
     }
     
     ///
-    public func isMultiple (of other: Self) -> Bool {
-        self.underlyingValue.isMultiple(of: other.underlyingValue)
+    public func isMultiple(
+        of other: Self
+    ) -> Bool {
+        
+        ///
+        self.underlyingValue
+            .isMultiple(
+                of: other.underlyingValue
+            )
     }
     
     ///
-    public func signum () -> Self {
+    public func signum() -> Self {
         .init(underlyingValue.signum())
     }
 }

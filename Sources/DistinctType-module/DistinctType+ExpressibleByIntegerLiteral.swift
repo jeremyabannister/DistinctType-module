@@ -13,7 +13,11 @@ extension DistinctType: ExpressibleByIntegerLiteral
     public typealias IntegerLiteralType = UnderlyingType.IntegerLiteralType
     
     ///
-    public init (integerLiteral value: IntegerLiteralType) {
-        self.init(.init(integerLiteral: value))
+    public init(integerLiteral value: IntegerLiteralType) {
+        
+        ///
+        self.init(
+            .init(integerLiteral: value)
+        )
     }
 }

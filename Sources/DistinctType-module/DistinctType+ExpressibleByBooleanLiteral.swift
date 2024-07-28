@@ -13,7 +13,11 @@ extension DistinctType: ExpressibleByBooleanLiteral
     public typealias BooleanLiteralType = UnderlyingType.BooleanLiteralType
     
     ///
-    public init (booleanLiteral value: BooleanLiteralType) {
-        self.init(.init(booleanLiteral: value))
+    public init(booleanLiteral value: BooleanLiteralType) {
+        
+        ///
+        self.init(
+            .init(booleanLiteral: value)
+        )
     }
 }

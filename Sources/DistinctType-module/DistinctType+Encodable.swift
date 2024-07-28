@@ -10,7 +10,10 @@ extension DistinctType: Encodable
     where UnderlyingType: Encodable {
     
     ///
-    public func encode (to encoder: Encoder) throws {
-        try underlyingValue.encode(to: encoder)
+    public func encode(to encoder: Encoder) throws {
+        
+        ///
+        try underlyingValue
+            .encode(to: encoder)
     }
 }

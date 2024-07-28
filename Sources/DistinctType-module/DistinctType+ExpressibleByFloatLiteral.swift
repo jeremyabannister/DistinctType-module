@@ -13,7 +13,11 @@ extension DistinctType: ExpressibleByFloatLiteral
     public typealias FloatLiteralType = UnderlyingType.FloatLiteralType
     
     ///
-    public init (floatLiteral value: FloatLiteralType) {
-        self.init(.init(floatLiteral: value))
+    public init(floatLiteral value: FloatLiteralType) {
+        
+        ///
+        self.init(
+            .init(floatLiteral: value)
+        )
     }
 }

@@ -13,7 +13,11 @@ extension DistinctType: ExpressibleByExtendedGraphemeClusterLiteral
     public typealias ExtendedGraphemeClusterLiteralType = UnderlyingType.ExtendedGraphemeClusterLiteralType
     
     ///
-    public init (extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
-        self.init(.init(extendedGraphemeClusterLiteral: value))
+    public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
+        
+        ///
+        self.init(
+            .init(extendedGraphemeClusterLiteral: value)
+        )
     }
 }

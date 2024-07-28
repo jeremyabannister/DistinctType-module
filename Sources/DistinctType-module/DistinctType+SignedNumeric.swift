@@ -15,7 +15,7 @@ extension DistinctType: SignedNumeric
     }
     
     ///
-    public mutating func negate () {
+    public mutating func negate() {
         underlyingValue.negate()
     }
 }

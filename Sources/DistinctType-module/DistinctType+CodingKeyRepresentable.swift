@@ -18,10 +18,12 @@ extension DistinctType: CodingKeyRepresentable where UnderlyingType: CodingKeyRe
     }
     
     ///
-    public init? (codingKey: some CodingKey) {
+    public init?(codingKey: some CodingKey) {
         
         ///
         guard let underlyingValue = UnderlyingType(codingKey: codingKey) else { return nil }
+        
+        ///
         self.init(underlyingValue)
     }
 }
