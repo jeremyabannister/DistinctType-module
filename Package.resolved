@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "assertiontoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/AssertionToolkit",
+      "state" : {
+        "revision" : "f566c1fbaf5567c8005bfa0b734357900b455e84",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "data-humanreadabledescription",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/Data-humanReadableDescription",
       "state" : {
-        "revision" : "38a7f852da2ad780626fcc30af528b0ae790d4a8",
-        "version" : "0.1.0"
+        "revision" : "392a2f0aa4fc3742c830c2c3dbdb14de499f72c5",
+        "version" : "0.1.1"
       }
     },
     {
@@ -14,16 +23,16 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/Data-utf8String",
       "state" : {
-        "revision" : "0c9ce9755054c84aea37bbb385f0859df837aca1",
-        "version" : "0.1.0"
+        "revision" : "31e935570c8926bb4b21981cccf388e78968c4a3",
+        "version" : "0.1.1"
       }
     },
     {
-      "identity" : "errormessage-module",
+      "identity" : "errormessage-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/ErrorMessage-module",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage-package",
       "state" : {
-        "revision" : "4eea71d7b3dc1a24fb0a69871009265819ec7ec5",
+        "revision" : "317e7dbba44dc6e28a4a169975d95e1a5ed5911b",
         "version" : "0.1.0"
       }
     },
@@ -32,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/ExpressionErgonomics",
       "state" : {
-        "revision" : "f1004f67ac975e36f7400bb13a945bae1fb5c9ec",
-        "version" : "0.3.2"
+        "revision" : "1886e6e82efdc5e6b266428e92cdd60f501f4cdd",
+        "version" : "0.4.0"
       }
     },
     {
@@ -41,16 +50,16 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/JSONToolkit",
       "state" : {
-        "revision" : "bfd2ae144794b57b41559c49c1c1ee071b44b6af",
-        "version" : "0.1.2"
+        "revision" : "21fd75b3f8c22139fbb6f2bd5062791ecec94fbb",
+        "version" : "0.2.0"
       }
     },
     {
-      "identity" : "randomlygeneratable-module",
+      "identity" : "randomlygeneratable-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/RandomlyGeneratable-module",
+      "location" : "https://github.com/jeremyabannister/RandomlyGeneratable-package",
       "state" : {
-        "revision" : "d9c78f022678459888cee34d0cb5a6534a2b4071",
+        "revision" : "c8cdcf96f0175ea4f1b7214b758981267229c479",
         "version" : "0.1.0"
       }
     },
@@ -59,17 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/String-utf8Data",
       "state" : {
-        "revision" : "af34c29e3abefb0b8f48ba4d29b6942609da9a2a",
-        "version" : "0.1.0"
-      }
-    },
-    {
-      "identity" : "testable-module",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/Testable-module",
-      "state" : {
-        "revision" : "b0642c654d854c391c4c88ca112a8b3433028fa9",
-        "version" : "0.1.0"
+        "revision" : "d01f5e203709814f3ed2170408eea54c06af17bc",
+        "version" : "0.1.1"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/XCTestToolkit",
       "state" : {
-        "revision" : "ad6a4de96c7ff31435afb1945f719a30edc867ad",
-        "version" : "0.1.5"
+        "revision" : "da14ae755f67262ae27d863b41a6ac9514f4db98",
+        "version" : "0.2.4"
       }
     }
   ],
